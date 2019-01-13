@@ -1,0 +1,186 @@
+var students = [
+	{
+		"Name" : "Aharbil Zoubair",
+		"Age" : "26",
+		"Phone" : "07.86.07.89.22",
+		"Adress" : "La Rouairie, 53410 le Bourgneuf la Foret",
+		"Citation" : "Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d’ennuis te seront épargnés.",
+		"Author" : "Confucius"
+	},
+	{
+		"Name" : "Julien Baylac",
+		"Age" : "27",
+		"Phone" : "06.78.67.99.13",
+		"Adress" : "11 square les hautes ourmes, 35000 Rennes",
+		"Citation" :"Nothing",
+		"Author" :"Nothing"
+	},
+	{
+		"Name" : "Delphine Brunetiere",
+		"Age" : "27",
+		"Phone" : "07.71.85.86.90",
+		"Adress" : "ne prefere pas communiquer,35000 Rennes",
+		"Citation" : "You’ll never find rainbows If you’re looking down",
+		"Author" : "Charlie Chaplin, Le Cirque"
+	},
+	{
+		"Name" : "Alice Carry",
+		"Age" : "25",
+		"Phone" : "06.74.33.48.50",
+		"Adress" : "18 rue du Puits Jacob, 35000 Rennes",
+		"Citation" : "just because you're growing doesn't mean you have to grow up, you know?",
+		"Author" : "Alex Hirsch, Gravity Falls"
+	},
+	{
+		"Name" : "Honorin Chevalier",
+		"Age" : "23",
+		"Phone" : "ne prefere pas communiquer",
+		"Adress" : "ne prefere pas communiquer, Gévezé",
+		"Citation" : "Ne pas confondre culture et intelligence.",
+		"Author" : "Le Pape"
+	},
+	{
+		"Name" : "Ann-Katell Droumaguet",
+		"Age" : "49",
+		"Phone" : "06.79.60.32.05",
+		"Adress" : "7 avenue du Gros Malhon, 35000 Rennes",
+		"Citation" : "Tout va pour le mieux dans le meilleur des mondes",
+		"Author" : "Voltaire (Candide)"
+	},
+	{
+		"Name" : "Audrey Gonthier",
+		"Age" : "28",
+		"Phone" : "07.60.34.47.84",
+		"Adress" : "4 rue du Clos Sévigné, 35510 Cesson-Sévigné",
+		"Citation" : "Vous aviez à choisir entre le déshonneur et la guerre. Vous avez choisi le déshonneur, vous aurez la guerre.",
+		"Author" : "Winston Churchill"
+	},
+	{
+		"Name" : "Nora Hennebert",
+		"Age" : "19",
+		"Phone" : "06.68.13.07.57",
+		"Adress" : "6 rue du Bobéril, 35200, Rennes",
+		"Citation" : "Carpe Diem",
+		"Author" : "Horace"
+	},
+	{
+		"Name" : "Quentin Juhel",
+		"Age" : "25",
+		"Phone" : "06.12.56.78.93",
+		"Adress" : "42 La Ville Goudelin,22100 Dinan",
+		"Citation" : "Je n’ai pas à gagner ma vie, je l’ai",
+		"Author" : "Boris Vian"
+	},
+	{
+		"Name" : "Carol Larquetoux",
+		"Age" : "Pas communiqué",
+		"Phone" : "Pas communiqué",
+		"Adress" : "Pas communiqué, Pas communiqué",
+		"Citation" : "Pas communiqué",
+		"Author" :"Pas communiqué"
+	},
+	{
+		"Name" : "Emmanuelle Lenormand",
+		"Age" : "23",
+		"Phone" : "06.20.57.65.96",
+		"Adress" : "5 Place du Landrel, 35200 Rennes",
+		"Citation" : "Pas communiqué",
+		"Author" :"Pas communiqué"
+	},
+	{
+		"Name" : "Jean-Marc Mpoy",
+		"Age" : "25",
+		"Phone" : "06.64.41.85.44",
+		"Adress" : "22 Square Professeur Louis Antoine, 35000 Rennes",
+		"Citation" : "There’s nobody that talks to you more in a day than yourself.",
+		"Author" : "Elena Delle Donne"
+	},
+	{
+		"Name" : "Maëva Nagou",
+		"Age" : "28",
+		"Phone" : "06.10.48.83.52",
+		"Adress" : "81 rue Adolphe Leray, 35000 Rennes",
+		"Citation" : "La vie, ce n’est pas d’attendre que les orages passent, c’est d’apprendre à danser sous la pluie.",
+		"Author" : "Musso"
+	},
+	{
+		"Name" : "Régis Nicolo",
+		"Age" : "33",
+		"Phone" : "06.99.34.58.18",
+		"Adress" : "9 rue de Rennes, 35250 Saint-Aubin d’Aubigné",
+		"Citation" : "Il n’y a pas de grande tâche difficile qui ne puisse être décomposée en petites tâches faciles.",
+		"Author" : "Matthieu Ricard"
+	},
+	{
+		"Name" : "Martin Peltier",
+		"Age" : "24",
+		"Phone" : "06.85.84.53.60",
+		"Adress" : "137 Avenue Aristide Briand, 35000 Rennes",
+		"Citation" : "Whatever you do, don't be another brick in the wall",
+		"Author" : "Moody, Californication"
+	},
+	{
+		"Name" : "Philipe Quentel",
+		"Age" : "28",
+		"Phone" : "06.63.68.12.13",
+		"Adress" : "1 Rue Porcon de la Barbinais, 35000 Rennes",
+		"Citation" : "Les hommes intelligents ne peuvent être de bons maris, pour la bonne raison qu’ils ne se marient pas",
+		"Author" : "Henry de Montherlant"
+	},
+	{
+		"Name" : "Ewilan Riviere",
+		"Age" : "26",
+		"Phone" : "06.73.15.47.25",
+		"Adress" : "14 La Boutonnerie, 35340 Liffré",
+		"Citation" : "Celui qui croit savoir n’apprend plus.",
+		"Author" : "P. Bottero, Le Pacte des MarchOmbres"
+	},
+	{
+		"Name" : "Gaëtan Save",
+		"Age" : "21",
+		"Phone" : "06.88.58.11.26",
+		"Adress" : "Les Champs Géraux, Pas communiqué",
+		"Citation" : "Le devoir a une grande ressemblance avec le bonheur d’autrui.",
+		"Author" : "Victor Hugo" 
+	},
+	{
+		"Name" : "Hugo Schindelman",
+		"Age" : "25",
+		"Phone" : "06.63.18.22.10",
+		"Adress" : "2 rue de la Vigne, Moigné, Le Rheu",
+		"Citation" : "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn('In his house at R'lyeh dead Cthulhu waits dreaming')",
+		"Author" : "Howard P. Lovecraft"
+	},
+	{
+		"Name" : "Maysam Shafaq-Zadah",
+		"Age" : "20",
+		"Phone" : "06.06.85.27.79",
+		"Adress" : "21 boulevard Charles Péguy, 35000 Rennes",
+		"Citation" : "Pas communiqué",
+		"Author" :"Pas communiqué"
+	},
+	{
+		"Name" : "Meuslem Shafaq-Zadah",
+		"Age" : "20",
+		"Phone" : "06.74.72.65.60",
+		"Adress" : "21 boulevard Charles Peguy, 35000 Rennes",
+		"Citation" : "Do not let your difficulties fill you with anxiety, after all it is only in the darkest nights that stars shine more brightly.",
+		"Author" : "Ali Ibn Abi Taleb"
+	},
+	{
+		"Name" : "Lionel Simonetti",
+		"Age" : "36",
+		"Phone" : "06.63.25.97.18",
+		"Adress" : "7 bd louis Volclair, 35000 Rennes",
+		"Citation" : "Pas communiqué",
+		"Author" :"Pas communiqué"
+	},
+	{
+		"Name" : "Joanna Tas",
+		"Age" : "39",
+		"Phone" : "06.31.47.22.29",
+		"Adress" : "2 avenue du Canada, 35200 Rennes",
+		"Citation" : "Pas communiqué",
+		"Author" :"Pas communiqué"
+	}
+]
